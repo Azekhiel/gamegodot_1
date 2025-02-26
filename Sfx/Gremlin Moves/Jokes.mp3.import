@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jokes.mp3-9c2730cc5e5985dc1972ce4ec4995d51.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Gremlin Moves/Jokes.mp3"
+dest_files=[ "res://.import/Jokes.mp3-9c2730cc5e5985dc1972ce4ec4995d51.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

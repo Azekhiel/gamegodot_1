@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Smiley Dialog.mp3-e6b3fe78af26b9670a87cb39b03337cf.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Smiley Dialog.mp3"
+dest_files=[ "res://.import/Smiley Dialog.mp3-e6b3fe78af26b9670a87cb39b03337cf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

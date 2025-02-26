@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Character Select Smiley Face.mp3-5f9062ec7d7df680a7ad669f2efafc3f.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Character Select Smiley Face.mp3"
+dest_files=[ "res://.import/Character Select Smiley Face.mp3-5f9062ec7d7df680a7ad669f2efafc3f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

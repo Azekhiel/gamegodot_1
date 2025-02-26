@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Clutch.mp3-b7c688c3758761b220c9cca6346552ed.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Smiley Face Moves/Clutch.mp3"
+dest_files=[ "res://.import/Clutch.mp3-b7c688c3758761b220c9cca6346552ed.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

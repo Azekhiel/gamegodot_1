@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Gremlin Dialog.mp3-29e046cd659ce109b2a7362dcb193676.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Gremlin Dialog.mp3"
+dest_files=[ "res://.import/Gremlin Dialog.mp3-29e046cd659ce109b2a7362dcb193676.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

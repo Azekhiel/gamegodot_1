@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Menu Select.mp3-a5045c70add6ecaf713779493f906ac3.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Menu Select.mp3"
+dest_files=[ "res://.import/Menu Select.mp3-a5045c70add6ecaf713779493f906ac3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

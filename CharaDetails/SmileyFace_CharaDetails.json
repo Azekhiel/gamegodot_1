@@ -1,0 +1,52 @@
+{
+    "Name":"Smiley face",
+
+    "MaxHP":100,
+
+    "HP":100,
+
+    "ActiveStatus":[],
+
+    "AntiDeathEffect":[],
+
+    "ActiveCD":{"Attack":0,"Defend":0,"SkillA":0,"SkillB":0,"Ultimate":3},
+
+    "Attack":{
+        "Name":"Axe Hit",
+        "Description":"Axe an enemy with 10% chance to crit",
+        "CD":0,
+        "Effect":[{"ATK":15,"Crit":0.1}],
+        "Priority":false
+    },
+    "Defend":{
+        "Name":"Shield block",
+        "Description":"Nulify next attack",
+        "CD":1,
+        "Effect":[{"DMG_RED":{"Ammount":0,"Duration":0}}],
+        "Priority":true,
+        "Crit_Prio":true
+    },
+    "SkillA":{
+        "Name":"I Got Lucky!",
+        "Description":"Gain 10% increased crit chance",
+        "CD":2,
+        "Effect":[{"CRIT_BUFF":{"Ammount":0.1,"Duration":2}}],
+        "Priority":false
+    },
+    "SkillB":{
+        "Name":" Clutch",
+        "Description":"If you die next turn, cheat death and live for another day (MAX 3 Uses)",
+        "CD":2,
+        "Effect":[{"ANTI_DEATH":20}],
+        "Priority":true,
+        "Crit_Prio":true,
+        "Uses":3
+    },
+    "Ultimate":{
+        "Name":"Face reveal",
+        "Description":"Restore health to full, die after 4 turns",
+        "CD":3,
+        "Effect":[{"HEAL":100},{"DEATH":{"Duration":4}}],
+        "Priority":true
+    }
+}

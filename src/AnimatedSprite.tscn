@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/AniSprite.gd" type="Script" id=1]
+[ext_resource path="res://sprites/BingChillin_Animation.tres" type="SpriteFrames" id=2]
+
+[node name="AnimatedSprite" type="AnimatedSprite"]
+position = Vector2( 189, 193 )
+frames = ExtResource( 2 )
+animation = "SkillA"
+frame = 14
+speed_scale = 1.5
+playing = true
+script = ExtResource( 1 )

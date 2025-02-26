@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Vanilla Ice Cream.mp3-1064359e7c19599ae4c5d468800b2aa1.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Bing Chilling Moves/Vanilla Ice Cream.mp3"
+dest_files=[ "res://.import/Vanilla Ice Cream.mp3-1064359e7c19599ae4c5d468800b2aa1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

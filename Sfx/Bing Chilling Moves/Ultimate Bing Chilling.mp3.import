@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ultimate Bing Chilling.mp3-43951a5a9271ef03814adf61a6fe3374.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Bing Chilling Moves/Ultimate Bing Chilling.mp3"
+dest_files=[ "res://.import/Ultimate Bing Chilling.mp3-43951a5a9271ef03814adf61a6fe3374.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

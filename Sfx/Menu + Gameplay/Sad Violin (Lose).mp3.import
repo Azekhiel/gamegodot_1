@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Sad Violin (Lose).mp3-03b1b007a49f40ccbceceb0604901026.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Sad Violin (Lose).mp3"
+dest_files=[ "res://.import/Sad Violin (Lose).mp3-03b1b007a49f40ccbceceb0604901026.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

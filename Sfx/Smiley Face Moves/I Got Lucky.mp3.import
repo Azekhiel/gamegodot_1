@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/I Got Lucky.mp3-971268a5b82f7b33e8c16fefa055f1b8.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Smiley Face Moves/I Got Lucky.mp3"
+dest_files=[ "res://.import/I Got Lucky.mp3-971268a5b82f7b33e8c16fefa055f1b8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

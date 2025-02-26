@@ -1,0 +1,408 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://sprites/BingChillin_Animation.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://sprites/game play.png" type="Texture" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://sprites/backgroundplaceholder.png" type="Texture" id=5]
+[ext_resource path="res://VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://src/Battle_bc_sf.gd" type="Script" id=7]
+[ext_resource path="res://src/AniSprite.gd" type="Script" id=8]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0.784314, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0, 0, 0, 0 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 0.54902 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 0.588235 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[node name="Battle2" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 225.0 ],
+"_edit_vertical_guides_": [ 400.0 ]
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 800, 450 )
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 1
+
+[node name="UI_Overlay" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="PlayerContainer" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 400, 450 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HealthBar" type="ProgressBar" parent="PlayerContainer"]
+show_behind_parent = true
+anchor_left = 0.1
+anchor_top = 0.0644444
+anchor_right = 0.34
+anchor_bottom = 0.117778
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/fg = SubResource( 4 )
+custom_styles/bg = SubResource( 6 )
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="PlayerContainer/HealthBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 6
+size_flags_vertical = 3
+text = "HP: 25/50"
+align = 1
+valign = 1
+
+[node name="EffectContainer" type="HBoxContainer" parent="PlayerContainer"]
+anchor_left = 0.1
+anchor_top = 0.133333
+anchor_right = 0.3425
+anchor_bottom = 0.206667
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="PlayerContainer"]
+anchor_top = 0.428889
+anchor_right = 0.5
+anchor_bottom = 0.571111
+rect_min_size = Vector2( 260, 64 )
+rect_pivot_offset = Vector2( 200, 32 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PlayerContainer"]
+frames = ExtResource( 2 )
+script = ExtResource( 8 )
+
+[node name="EnemyContainer" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 400, 450 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HealthBar" type="ProgressBar" parent="EnemyContainer"]
+show_behind_parent = true
+anchor_left = 0.89375
+anchor_top = 0.117778
+anchor_right = 1.13125
+anchor_bottom = 0.175556
+grow_horizontal = 0
+rect_rotation = 180.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/fg = SubResource( 4 )
+custom_styles/bg = SubResource( 6 )
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="EnemyContainer/HealthBar"]
+anchor_left = 0.999999
+anchor_top = 1.00003
+anchor_right = 2.0
+anchor_bottom = 2.00003
+rect_rotation = -180.0
+size_flags_horizontal = 6
+size_flags_vertical = 3
+text = "HP: 25/50"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="EffectContainer" type="HBoxContainer" parent="EnemyContainer"]
+anchor_left = 0.65625
+anchor_top = 0.133333
+anchor_right = 0.89375
+anchor_bottom = 0.206667
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="EnemyContainer"]
+anchor_left = 0.5
+anchor_top = 0.428889
+anchor_right = 1.0
+anchor_bottom = 0.571111
+grow_horizontal = 0
+rect_min_size = Vector2( 260, 64 )
+rect_pivot_offset = Vector2( 200, 32 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="EnemyContainer"]
+frames = ExtResource( 2 )
+script = ExtResource( 8 )
+
+[node name="ActionPanel" type="Panel" parent="."]
+anchor_top = 0.748889
+anchor_right = 1.0
+anchor_bottom = 0.982222
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Attack" type="Button" parent="ActionPanel"]
+anchor_left = 0.025
+anchor_top = 0.0761905
+anchor_right = 0.1125
+anchor_bottom = 0.47619
+size_flags_horizontal = 3
+custom_colors/font_color_disabled = Color( 0.294118, 0.294118, 0.294118, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "ATK"
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CD_display" type="Label" parent="ActionPanel/Attack"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -14.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "CD: 0 Turns"
+align = 1
+
+[node name="Defend" type="Button" parent="ActionPanel"]
+anchor_left = 0.13
+anchor_top = 0.0761905
+anchor_right = 0.2175
+anchor_bottom = 0.47619
+size_flags_horizontal = 3
+custom_colors/font_color_disabled = Color( 0.294118, 0.294118, 0.294118, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "DEF"
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CD_display" type="Label" parent="ActionPanel/Defend"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -14.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "CD: 0 Turns"
+align = 1
+
+[node name="SkillA" type="Button" parent="ActionPanel"]
+anchor_left = 0.23625
+anchor_top = 0.0761905
+anchor_right = 0.3225
+anchor_bottom = 0.47619
+size_flags_horizontal = 3
+custom_colors/font_color_disabled = Color( 0.294118, 0.294118, 0.294118, 1 )
+custom_fonts/font = SubResource( 11 )
+text = "SkillA"
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CD_display" type="Label" parent="ActionPanel/SkillA"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -14.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "CD: 0 Turns"
+align = 1
+
+[node name="SkillB" type="Button" parent="ActionPanel"]
+anchor_left = 0.3425
+anchor_top = 0.0761905
+anchor_right = 0.42875
+anchor_bottom = 0.47619
+size_flags_horizontal = 3
+custom_colors/font_color_disabled = Color( 0.294118, 0.294118, 0.294118, 1 )
+custom_fonts/font = SubResource( 11 )
+text = "SkillB"
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CD_display" type="Label" parent="ActionPanel/SkillB"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -14.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "CD: 0 Turns"
+align = 1
+
+[node name="Ultimate" type="Button" parent="ActionPanel"]
+anchor_left = 0.03625
+anchor_top = 0.638095
+anchor_right = 0.42125
+anchor_bottom = 0.914286
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/font_color_disabled = Color( 0.294118, 0.294118, 0.294118, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Ultimate"
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CD_display" type="Label" parent="ActionPanel/Ultimate"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -14.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "CD: 0 Turns"
+align = 1
+
+[node name="Description" type="VBoxContainer" parent="ActionPanel"]
+anchor_left = 0.5875
+anchor_top = 0.342857
+anchor_right = 0.9625
+anchor_bottom = 0.943
+margin_bottom = -0.0149994
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Description" type="Panel" parent="ActionPanel/Description"]
+margin_right = 384.0
+margin_bottom = 84.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 10 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ActionPanel/Description/Description"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SkillName" type="Label" parent="ActionPanel/Description/Description/VBoxContainer"]
+margin_right = 384.0
+margin_bottom = 14.0
+size_flags_vertical = 5
+
+[node name="Desc" type="Label" parent="ActionPanel/Description/Description/VBoxContainer"]
+margin_top = 18.0
+margin_right = 384.0
+margin_bottom = 84.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+autowrap = true
+
+[node name="Textbox" type="Panel" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.05
+anchor_right = 0.5
+anchor_bottom = 0.05
+margin_left = -388.0
+margin_right = 388.0
+margin_bottom = 126.0
+custom_styles/panel = SubResource( 3 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Textbox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -20.0
+
+[node name="Portrait" type="TextureRect" parent="Textbox/HBoxContainer"]
+margin_right = 64.0
+margin_bottom = 120.0
+texture = ExtResource( 4 )
+stretch_mode = 4
+
+[node name="Dialog" type="RichTextLabel" parent="Textbox/HBoxContainer"]
+margin_left = 68.0
+margin_right = 756.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 200, 120 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Penis balls balls balls"
+
+[node name="Ticker" type="Label" parent="Textbox"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -50.0
+margin_top = -50.0
+margin_right = -5.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 1 )
+text = ">"
+align = 1
+valign = 1

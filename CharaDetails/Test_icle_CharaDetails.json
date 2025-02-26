@@ -1,0 +1,47 @@
+{
+    "Name":"Test icle",
+
+    "MaxHP":50,
+
+    "HP":50,
+
+    "ActiveStatus":[],
+
+    "ActiveCD":{"Attack":0,"Defend":0,"SkillA":0,"SkillB":0,"Ultimate":3},
+
+    "Attack":{
+        "Name":"Kablammo",
+        "Description":"Punch for 5 damage",
+        "CD":0,
+        "Effect":[{"ATK":5,"Anim":"Punch"}],
+        "Priority":false
+    },
+    "Defend":{
+        "Name":"No Thanks",
+        "Description":"Take 50% less damage (You will go first)",
+        "CD":0,
+        "Effect":[{"DMG_RED":{"Ammount":0.5,"Duration":0},"Anim":"Shield"}],
+        "Priority":true
+    },
+    "SkillA":{
+        "Name":"Violence",
+        "Description":"Kill the bastards",
+        "CD":2,
+        "Effect":[{"AMP_ATK":{"Ammount":1.5,"Duration":2}}],
+        "Priority":false
+    },
+    "SkillB":{
+        "Name":"Love",
+        "Description":"You and the enemy kiss",
+        "CD":2,
+        "Effect":[{"CRIT_BUFF":{"Ammount":0.3,"Duration":2}}],
+        "Priority":false
+    },
+    "Ultimate":{
+        "Name":"Bullshit",
+        "Description":"You win idk",
+        "CD":5,
+        "Effect":[{"ATK":10000,"Anim":"Shield"}],
+        "Priority":true
+    }
+}

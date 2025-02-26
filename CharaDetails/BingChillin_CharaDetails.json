@@ -1,0 +1,47 @@
+{
+    "Name":"Bing Chillin",
+
+    "MaxHP":100,
+
+    "HP":100,
+
+    "ActiveStatus":[],
+
+    "ActiveCD":{"Attack":0,"Defend":0,"SkillA":0,"SkillB":0,"Ultimate":3},
+
+    "Attack":{
+        "Name":"Vanilla Ice Cream",
+        "Description":"Throws vanilla ice cream, deals dmg, slows enemy",
+        "CD":0,
+        "Effect":[{"ATK":15,"Anim":"Punch"}],
+        "Priority":false
+    },
+    "Defend":{
+        "Name":"Cookie shield",
+        "Description":"Use cookie as shield, reduce dmg",
+        "CD":0,
+        "Effect":[{"DMG_RED":{"Ammount":0.50,"Duration":0},"Anim":"Shield"}],
+        "Priority":true
+    },
+    "SkillA":{
+        "Name":"Healing lemonade",
+        "Description":"Drink a lemonade to heal",
+        "CD":2,
+        "Effect":[{"HEAL":10,"Anim":"Swipe"},{"DMG_RED":{"Ammount":0.75,"Duration":1}}],
+        "Priority":false
+    },
+    "SkillB":{
+        "Name":" Lucky sundae",
+        "Description":"Receive a random effect",
+        "CD":2,
+        "Effect":[{"RANDOM_EFFECT":{"Choice":[{"DMG_RED":{"Ammount":0.50,"Duration":1}},{"ATK_AMP":{"Ammount":0.50,"Duration":1}}],"Duration":2}}],
+        "Priority":false
+    },
+    "Ultimate":{
+        "Name":"Doppleganger",
+        "Description":"All moves trigger twice",
+        "CD":5,
+        "Effect":[{"DOUBLE_TURN":{"Duration":2},"Anim":"Piss idk"}],
+        "Priority":true
+    }
+}

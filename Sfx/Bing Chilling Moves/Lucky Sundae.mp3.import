@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lucky Sundae.mp3-6aa439f40518732ddc69f0c97ba12e10.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Bing Chilling Moves/Lucky Sundae.mp3"
+dest_files=[ "res://.import/Lucky Sundae.mp3-6aa439f40518732ddc69f0c97ba12e10.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

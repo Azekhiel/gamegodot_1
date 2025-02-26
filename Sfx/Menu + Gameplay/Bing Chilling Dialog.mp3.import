@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bing Chilling Dialog.mp3-176a50ad1cd06011df113b817a4505e2.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Bing Chilling Dialog.mp3"
+dest_files=[ "res://.import/Bing Chilling Dialog.mp3-176a50ad1cd06011df113b817a4505e2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Second Eye.mp3-71c2d9c2f0c64e11436231350f85baf3.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Gremlin Moves/Second Eye.mp3"
+dest_files=[ "res://.import/Second Eye.mp3-71c2d9c2f0c64e11436231350f85baf3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Furry.mp3-7ed5c9e4461906e7bd5b4b16c1a4b9b2.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Gremlin Moves/Furry.mp3"
+dest_files=[ "res://.import/Furry.mp3-7ed5c9e4461906e7bd5b4b16c1a4b9b2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

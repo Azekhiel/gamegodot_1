@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://Backgrounds/Main Menu/Main Menu Frame by Frame/background_menu_gif.tres" type="Texture" id=2]
+[ext_resource path="res://Menus/Main Menu/Start Button_Hover.PNG" type="Texture" id=3]
+[ext_resource path="res://Menus/Title/Title per Frame/Title title .PNG" type="Texture" id=4]
+[ext_resource path="res://Menus/Main Menu/Hard Button_Hover.PNG" type="Texture" id=5]
+[ext_resource path="res://Menus/Main Menu/Easy Button_Hover.PNG" type="Texture" id=6]
+
+[sub_resource type="VisualScript" id=1]
+data = {
+"base_type": "SpriteFrames",
+"functions": [  ],
+"is_tool_script": false,
+"signals": [  ],
+"variables": [  ],
+"vs_unify": true
+}
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+script = SubResource( 1 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="background_menu" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 594.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+
+[node name="Start" type="Button" parent="."]
+show_behind_parent = true
+margin_left = 430.0
+margin_top = 293.0
+margin_right = 582.0
+margin_bottom = 347.0
+
+[node name="StartButtonHover" type="TouchScreenButton" parent="."]
+position = Vector2( 152, -42 )
+scale = Vector2( 0.442187, 0.442187 )
+normal = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+
+[node name="TitleTitle" type="TouchScreenButton" parent="."]
+position = Vector2( 132, -68 )
+scale = Vector2( 0.466406, 0.466406 )
+normal = ExtResource( 4 )
+
+[node name="EasyButtonHover" type="Sprite" parent="."]
+visible = false
+position = Vector2( 538, 6 )
+texture = ExtResource( 6 )
+
+[node name="HardButtonHover" type="Sprite" parent="."]
+visible = false
+position = Vector2( 470, 8 )
+texture = ExtResource( 5 )
+
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]

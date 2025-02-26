@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Character Select Gremlin.mp3-6afac2714e89b4b34f6d7fb91b739d4e.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Character Select Gremlin.mp3"
+dest_files=[ "res://.import/Character Select Gremlin.mp3-6afac2714e89b4b34f6d7fb91b739d4e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

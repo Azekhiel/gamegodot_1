@@ -1,0 +1,105 @@
+[gd_resource type="SpriteFrames" load_steps=66 format=2]
+
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 11.PNG" type="Texture" id=1]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 6.PNG" type="Texture" id=2]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 5.PNG" type="Texture" id=3]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 10.PNG" type="Texture" id=4]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 8.PNG" type="Texture" id=5]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 2.PNG" type="Texture" id=6]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 9.PNG" type="Texture" id=7]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 3.PNG" type="Texture" id=8]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 12.PNG" type="Texture" id=9]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 13.PNG" type="Texture" id=10]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 3.PNG" type="Texture" id=11]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 1.PNG" type="Texture" id=12]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 4.PNG" type="Texture" id=13]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 9.PNG" type="Texture" id=14]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 11.PNG" type="Texture" id=15]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 1.PNG" type="Texture" id=16]
+[ext_resource path="res://sprites/SmileyFace/Hurt/SF Dmged 1.PNG" type="Texture" id=17]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 6.PNG" type="Texture" id=18]
+[ext_resource path="res://sprites/SmileyFace/Hurt/SF Dmged 2.PNG" type="Texture" id=19]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 8.PNG" type="Texture" id=20]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 7.PNG" type="Texture" id=21]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 4.PNG" type="Texture" id=22]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 7.PNG" type="Texture" id=23]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 5.PNG" type="Texture" id=24]
+[ext_resource path="res://sprites/SmileyFace/Defend/SF Def 2.PNG" type="Texture" id=25]
+[ext_resource path="res://sprites/SmileyFace/Attack/SF Atk 10.PNG" type="Texture" id=26]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-10.png" type="Texture" id=27]
+[ext_resource path="res://sprites/SmileyFace/Idle/SF Idle 4.PNG" type="Texture" id=28]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-11.png" type="Texture" id=29]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-13.png" type="Texture" id=30]
+[ext_resource path="res://sprites/SmileyFace/Hurt/SF Dmged 4.PNG" type="Texture" id=31]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-6.png" type="Texture" id=32]
+[ext_resource path="res://sprites/SmileyFace/Hurt/SF Dmged 3.PNG" type="Texture" id=33]
+[ext_resource path="res://sprites/SmileyFace/Idle/SF Idle 2.PNG" type="Texture" id=34]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-12.png" type="Texture" id=35]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-12.png" type="Texture" id=36]
+[ext_resource path="res://sprites/SmileyFace/Idle/SF Idle 3.PNG" type="Texture" id=37]
+[ext_resource path="res://sprites/SmileyFace/Idle/SF Idle 1.PNG" type="Texture" id=38]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-10.png" type="Texture" id=39]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-14.png" type="Texture" id=40]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-9.png" type="Texture" id=41]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-7.png" type="Texture" id=42]
+[ext_resource path="res://sprites/SmileyFace/Hurt/SF Dmged 5.PNG" type="Texture" id=43]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-4.png" type="Texture" id=44]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-5.png" type="Texture" id=45]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-3.png" type="Texture" id=46]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-3.png" type="Texture" id=47]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-7.png" type="Texture" id=48]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-15.png" type="Texture" id=49]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-2.png" type="Texture" id=50]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-8.png" type="Texture" id=51]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-1.png" type="Texture" id=52]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-4.png" type="Texture" id=53]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-11.png" type="Texture" id=54]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-8.png" type="Texture" id=55]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-9.png" type="Texture" id=56]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-1.png" type="Texture" id=57]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-2.png" type="Texture" id=58]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-6.png" type="Texture" id=59]
+[ext_resource path="res://sprites/SmileyFace/SkillA/SF_Ability_1-13.png" type="Texture" id=60]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-5.png" type="Texture" id=61]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-15.png" type="Texture" id=62]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-16.png" type="Texture" id=63]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-14.png" type="Texture" id=64]
+[ext_resource path="res://sprites/SmileyFace/SkillB/SF_Ability_2-17.png" type="Texture" id=65]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 26 ), ExtResource( 1 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 25 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 4 ), ExtResource( 15 ) ],
+"loop": false,
+"name": "Defend",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 19 ), ExtResource( 33 ), ExtResource( 31 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 38 ), ExtResource( 34 ), ExtResource( 37 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 57 ), ExtResource( 58 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 59 ), ExtResource( 48 ), ExtResource( 51 ), ExtResource( 41 ), ExtResource( 39 ), ExtResource( 54 ), ExtResource( 35 ), ExtResource( 60 ), ExtResource( 40 ), ExtResource( 49 ) ],
+"loop": false,
+"name": "SkillA",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 52 ), ExtResource( 50 ), ExtResource( 46 ), ExtResource( 53 ), ExtResource( 61 ), ExtResource( 32 ), ExtResource( 42 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 36 ), ExtResource( 30 ), ExtResource( 64 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 65 ) ],
+"loop": false,
+"name": "SkillB",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 57 ), ExtResource( 58 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 59 ), ExtResource( 48 ), ExtResource( 51 ), ExtResource( 41 ), ExtResource( 39 ), ExtResource( 54 ), ExtResource( 35 ), ExtResource( 60 ), ExtResource( 40 ), ExtResource( 49 ) ],
+"loop": false,
+"name": "Ultimate",
+"speed": 5.0
+} ]

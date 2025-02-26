@@ -1,0 +1,47 @@
+{
+    "Name":"The gremlin",
+
+    "MaxHP":100,
+
+    "HP":100,
+
+    "ActiveStatus":[],
+
+    "ActiveCD":{"Attack":0,"Defend":0,"SkillA":0,"SkillB":0,"Ultimate":3},
+
+    "Attack":{
+        "Name":"Bite",
+        "Description":"Bite the enemy and heal",
+        "CD":0,
+        "Effect":[{"ATK":15,"HEAL":3}],
+        "Priority":false
+    },
+    "Defend":{
+        "Name":"Jokes",
+        "Description":"Make the enemy have 60% chance to miss (You will go first)",
+        "CD":0,
+        "Effect":[{"DODGE":{"Ammount":0.6,"Duration":0},"Anim":"Shield"}],
+        "Priority":true
+    },
+    "SkillA":{
+        "Name":"Triggered",
+        "Description":"Deal massive damage when attacking next turn",
+        "CD":2,
+        "Effect":[{"AMP_ATK":{"Ammount":3,"Duration":1}}],
+        "Priority":false
+    },
+    "SkillB":{
+        "Name":"Furry!",
+        "Description":"Gain either Defense or Attack",
+        "CD":2,
+        "Effect":[{"RANDOM_EFFECT":{"Choice":[{"DMG_RED":{"Ammount":0.8,"Duration":2}},{"ATK_AMP":{"Ammount":2,"Duration":2}}],"Duration":0}}],
+        "Priority":false
+    },
+    "Ultimate":{
+        "Name":"Showtime!",
+        "Description":"Start with aditional effects next turn",
+        "CD":5,
+        "Effect":[{"RANDOM_EFFECT":{"Choice":[{"DMG_RED":{"Ammount":0.8,"Duration":1}},{"ATK_AMP":{"Ammount":3,"Duration":1}}],"Duration":0}}],
+        "Priority":true
+    }
+}

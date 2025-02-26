@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Battle Mix.mp3-53f1c7d42b966aa4727ea7068dbdb45c.mp3str"
+
+[deps]
+
+source_file="res://Sfx/BGM/Battle Mix.mp3"
+dest_files=[ "res://.import/Battle Mix.mp3-53f1c7d42b966aa4727ea7068dbdb45c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

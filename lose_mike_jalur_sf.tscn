@@ -1,0 +1,232 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://lose_mike_jalur_sf.gd" type="Script" id=1]
+[ext_resource path="res://dialogue_lose_mike.gd" type="Script" id=2]
+[ext_resource path="res://Assets/background 1.PNG" type="Texture" id=3]
+[ext_resource path="res://UI/Visual Novel/Bingchilling/BC_Player.png" type="Texture" id=4]
+[ext_resource path="res://UI/Visual Novel/MIKE/Mike_Player.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Acme-Regular.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/Camper Print Serif 1 Regular.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://UI/Visual Novel/MIKE/Mike_Enemy.png" type="Texture" id=8]
+[ext_resource path="res://UI/Visual Novel/Bingchilling/BC_Enemy.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=5]
+size = 80
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 55
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 6 )
+
+[node name="VisualNovel" type="Node2D"]
+
+[node name="dialogue_lose_mike" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="Background1" type="Sprite" parent="."]
+position = Vector2( 528, 309 )
+scale = Vector2( 0.682309, 0.607867 )
+texture = ExtResource( 3 )
+
+[node name="1" type="Position2D" parent="."]
+position = Vector2( 105, 419 )
+scale = Vector2( 0.595807, 0.546042 )
+
+[node name="2" type="Position2D" parent="."]
+position = Vector2( 372, 419 )
+scale = Vector2( 0.595807, 0.546042 )
+
+[node name="3" type="Position2D" parent="."]
+position = Vector2( 645, 419 )
+scale = Vector2( 0.595807, 0.546042 )
+
+[node name="4" type="Position2D" parent="."]
+position = Vector2( 908, 419 )
+scale = Vector2( 0.595807, 0.546042 )
+
+[node name="lose_mike_jalur_sf" type="Control" parent="."]
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 39.0
+margin_bottom = 39.0
+script = ExtResource( 1 )
+
+[node name="BcPlayer" type="Sprite" parent="lose_mike_jalur_sf"]
+visible = false
+position = Vector2( 510, 253 )
+scale = Vector2( 0.637109, 0.637109 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="lose_mike_jalur_sf/BcPlayer"]
+margin_left = -368.853
+margin_top = 400.245
+margin_right = 716.147
+margin_bottom = 540.245
+custom_colors/default_color = Color( 0.027451, 0.027451, 0.027451, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+text = "tes"
+
+[node name="Tween" type="Tween" parent="lose_mike_jalur_sf/BcPlayer"]
+
+[node name="Label" type="Label" parent="lose_mike_jalur_sf/BcPlayer"]
+margin_left = 400.246
+margin_top = 307.64
+margin_right = 761.245
+margin_bottom = 363.64
+custom_colors/font_color = Color( 0.439216, 0.00784314, 0.341176, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Bing Chilling"
+
+[node name="BcEnemy" type="Sprite" parent="lose_mike_jalur_sf"]
+visible = false
+position = Vector2( 519, 254 )
+scale = Vector2( 0.638477, 0.638477 )
+texture = ExtResource( 9 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="lose_mike_jalur_sf/BcEnemy"]
+margin_left = -709.501
+margin_top = 407.219
+margin_right = 375.499
+margin_bottom = 547.219
+custom_colors/default_color = Color( 0.027451, 0.027451, 0.027451, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+text = "tes"
+
+[node name="Tween" type="Tween" parent="lose_mike_jalur_sf/BcEnemy"]
+
+[node name="Label" type="Label" parent="lose_mike_jalur_sf/BcEnemy"]
+margin_left = -570.107
+margin_top = 311.679
+margin_right = -209.107
+margin_bottom = 367.679
+custom_colors/font_color = Color( 0.439216, 0.00784314, 0.341176, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Bing Chilling"
+
+[node name="MikePlayer" type="Sprite" parent="lose_mike_jalur_sf"]
+visible = false
+position = Vector2( 510, 253 )
+scale = Vector2( 0.637109, 0.637109 )
+texture = ExtResource( 5 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="lose_mike_jalur_sf/MikePlayer"]
+margin_left = -381.41
+margin_top = 401.815
+margin_right = 703.59
+margin_bottom = 541.815
+custom_colors/default_color = Color( 0.027451, 0.027451, 0.027451, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+text = "tes"
+
+[node name="Tween" type="Tween" parent="lose_mike_jalur_sf/MikePlayer"]
+
+[node name="TextBox2" type="ColorRect" parent="lose_mike_jalur_sf/MikePlayer"]
+margin_left = 300.0
+margin_top = 314.0
+margin_right = 656.0
+margin_bottom = 372.0
+color = Color( 0.760784, 0.85098, 0.560784, 0.698039 )
+
+[node name="Label" type="Label" parent="lose_mike_jalur_sf/MikePlayer/TextBox2"]
+margin_left = 144.194
+margin_top = -3.22137
+margin_right = 505.194
+margin_bottom = 52.7786
+custom_colors/font_color = Color( 0.180392, 0.431373, 0.054902, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Mike"
+
+[node name="MikeEnemy" type="Sprite" parent="lose_mike_jalur_sf"]
+visible = false
+position = Vector2( 521, 256 )
+scale = Vector2( 0.637109, 0.637109 )
+texture = ExtResource( 8 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="lose_mike_jalur_sf/MikeEnemy"]
+margin_left = -707.885
+margin_top = 404.954
+margin_right = 377.115
+margin_bottom = 544.954
+custom_colors/default_color = Color( 0.027451, 0.027451, 0.027451, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+text = "tes"
+
+[node name="Tween" type="Tween" parent="lose_mike_jalur_sf/MikeEnemy"]
+
+[node name="TextBox2" type="ColorRect" parent="lose_mike_jalur_sf/MikeEnemy"]
+margin_left = -663.936
+margin_top = 313.918
+margin_right = -307.936
+margin_bottom = 371.918
+color = Color( 0.760784, 0.85098, 0.560784, 0.698039 )
+
+[node name="Label" type="Label" parent="lose_mike_jalur_sf/MikeEnemy/TextBox2"]
+margin_left = 144.194
+margin_top = -3.22137
+margin_right = 505.194
+margin_bottom = 52.7786
+custom_colors/font_color = Color( 0.180392, 0.431373, 0.054902, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Mike"
+
+[node name="TextBox1" type="ColorRect" parent="lose_mike_jalur_sf"]
+visible = false
+margin_left = 29.0
+margin_top = 470.0
+margin_right = 994.0
+margin_bottom = 596.0
+color = Color( 0.760784, 0.85098, 0.560784, 0.698039 )
+
+[node name="Button1" type="Button" parent="lose_mike_jalur_sf"]
+margin_left = 274.0
+margin_top = 21.0
+margin_right = 799.0
+margin_bottom = 133.0
+rect_pivot_offset = Vector2( 211, 56 )
+custom_fonts/font = SubResource( 2 )
+text = "Choice 1"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Button2" type="Button" parent="lose_mike_jalur_sf"]
+margin_left = 273.0
+margin_top = 144.0
+margin_right = 798.0
+margin_bottom = 256.0
+rect_pivot_offset = Vector2( 211, 56 )
+custom_fonts/font = SubResource( 3 )
+text = "Choice 2"
+
+[node name="Button3" type="Button" parent="lose_mike_jalur_sf"]
+margin_left = 273.0
+margin_top = 267.0
+margin_right = 798.0
+margin_bottom = 379.0
+rect_pivot_offset = Vector2( 211, 56 )
+custom_fonts/font = SubResource( 4 )
+text = "Choice 3"
+
+[connection signal="tween_completed" from="lose_mike_jalur_sf/BcPlayer/Tween" to="lose_mike_jalur_sf" method="_on_Tween_tween_completed"]
+[connection signal="tween_completed" from="lose_mike_jalur_sf/BcEnemy/Tween" to="lose_mike_jalur_sf" method="_on_Tween_tween_completed"]
+[connection signal="tween_completed" from="lose_mike_jalur_sf/MikePlayer/Tween" to="lose_mike_jalur_sf" method="_on_Tween_tween_completed"]
+[connection signal="tween_completed" from="lose_mike_jalur_sf/MikeEnemy/Tween" to="lose_mike_jalur_sf" method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="lose_mike_jalur_sf/Button1" to="lose_mike_jalur_sf" method="_on_Button1_pressed"]
+[connection signal="pressed" from="lose_mike_jalur_sf/Button2" to="lose_mike_jalur_sf" method="_on_Button2_pressed"]
+[connection signal="pressed" from="lose_mike_jalur_sf/Button3" to="lose_mike_jalur_sf" method="_on_Button3_pressed"]

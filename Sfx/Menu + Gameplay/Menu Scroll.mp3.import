@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Menu Scroll.mp3-d6d39e87ab784dc3326822c953abfeb4.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Menu + Gameplay/Menu Scroll.mp3"
+dest_files=[ "res://.import/Menu Scroll.mp3-d6d39e87ab784dc3326822c953abfeb4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

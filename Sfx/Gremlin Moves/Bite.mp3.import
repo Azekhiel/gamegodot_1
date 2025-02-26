@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bite.mp3-ba418f47adb7cb2167f6e23c28e9fc9b.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Gremlin Moves/Bite.mp3"
+dest_files=[ "res://.import/Bite.mp3-ba418f47adb7cb2167f6e23c28e9fc9b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Face Reveal.mp3-d5f7e88fde594afac9a10fb3af2052b5.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Smiley Face Moves/Face Reveal.mp3"
+dest_files=[ "res://.import/Face Reveal.mp3-d5f7e88fde594afac9a10fb3af2052b5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
